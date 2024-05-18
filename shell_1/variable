@@ -1,0 +1,55 @@
+#!/bin/bash
+
+#显示环境变量
+
+#set
+
+# $符号使用变量
+#一些系统变量
+
+echo bash=$BASH home=$HOME hostname=$HOSTNAME hosttype=$HOSTTYPE ifs=$IFS lang=$LANG 
+echo uid=$UID
+
+
+
+#定义用户变量，无需指定类型
+#赋值，右边变量需加$
+
+a=2
+b=3
+str="this is a string"
+c=$a
+d=$b
+str1=$str
+
+echo $a $b $str
+
+echo $c $d $str1
+
+#使用命令的输出，$(command)
+
+today=$(date +%yy%mm%dd)
+
+echo $today
+
+#重定向,>覆盖式，>>追加式
+date>test1
+date>test1
+date>>test1
+
+#输入重定向，<
+#wc命令输出文本行数，单词数，字节数
+wc<test1
+
+echo "<<重定向"
+#以marker字符串为结尾的输入重定向,<<
+wc<<nima
+gehowi
+vuuv
+esfs
+nima
+
+#管道 command1 | command2 ,两个命令同时执行，左边的输出流向右边的输入
+
+tree ../ | wc
+

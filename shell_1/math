@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#整数运算，使用$[expr]
+echo $[2*3+4-1]
+
+a=7
+b=4
+echo $[$a+$b*$a-4]
+
+#在脚本中使用bc计算器
+#scale=4,意味着四位小数
+var=$(echo "scale=4;3.44/5" | bc )
+echo $var
+
+var=$(bc<<EOF
+scale=4
+a1=$a+$b
+a2=$a-$b
+a1/a2
+EOF
+)
+echo var=$var
+
+#上一个命令的退出状态
+echo $?
+var=3
+exit $var

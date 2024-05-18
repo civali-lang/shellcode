@@ -1,0 +1,99 @@
+#!/bin/bash
+
+#结构化命令
+#if then语句,如果if后的语句退出状态码为0,则执行then后的语句块
+if pwd
+then 
+   echo "it work"
+fi
+
+username=lang
+
+if grep $username /etc/passwd
+then
+   echo "yes"
+   ls -a /home/$username/.b*
+fi
+
+username=lili
+
+if grep $username /etc/passed
+then
+   echo "yes"
+   ls -a /home/$username/
+else
+    echo "no"
+fi
+
+echo "end"
+
+#if可嵌套
+#或使用elif
+
+v1=10
+v2=11
+#注意打好空格，'['和']'不能和其它符号连在一起
+#eq ge gt le lt ne
+#注意比较的只能是整数
+
+if [ $v1 -gt 5 ]
+then 
+   echo "v1 greater than 5"
+fi
+
+if [ $v1 -eq $v2 ]
+then 
+   echo "eq"
+else 
+   echo "noeq"
+fi
+   
+#字符串比较
+s1="nihao"
+s2="wobuhao"
+s3=$s1
+
+if [ $s1 = $s2 ]
+then 
+   echo "streq"
+fi
+
+if [ $s1 != $s2 ]
+then 
+   echo "strne"
+fi
+#>和<需加转义\
+if [ $s1 \> $s2 ]
+then 
+   echo "strgt"
+fi
+
+if [ $s1 \< $s2 ]
+then 
+   echo "strlt"
+fi
+
+#检查目录和文件
+#d e f r w x O G ,-s是否存在并非空
+#file1 -nt file2,file1比file2新
+#file1 -ot file2
+
+if [ -d $HOME ]
+then
+   echo "home:$HOME"
+fi
+
+echo $USER
+
+#复合条件
+#&&
+#||
+
+if [ -d $HOME ] && [ -d $HOME/workspace ]
+then
+   echo "exist"
+fi
+
+#双括号的使用
+
+
