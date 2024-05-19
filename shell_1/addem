@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# echo $1
+
+# echo "$1 * $2" = $[ $1 * $2 ]
+
+echo $(basename $0)
+
+name=$(basename $0)
+
+if [ $name = "addem" ]
+then
+    total=$[ $1 + $2 ]
+elif [ $name = "multem "]
+then 
+    total=$[ $1 * $2 ]
+fi
+
+echo total = $total
+

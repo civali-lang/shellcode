@@ -1,0 +1,8 @@
+#bin/bash
+#移动参数，shift
+#这里的写法只能这么写了，用 while [ -n $1 ]会无效
+until [ -z $1 ]
+do
+    echo $1
+    shift
+done 

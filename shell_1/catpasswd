@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#保存旧值，以便恢复
+old=$IFS
+#设置字段分隔符
+
+IFS=:
+
+for text in $(cat /etc/passwd)
+do
+    echo $text
+done
+
+#恢复IFS
+IFS=$old

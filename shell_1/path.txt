@@ -1,0 +1,62 @@
+/home/lang/.vscode-server/bin/dc96b837cf6bb4af9cd736aa3af08cf8279f7685/bin/remote-cli
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/usr/lib/wsl/lib
+/mnt/c/Program Files/Common Files/Oracle/Java/javapath
+/mnt/c/Program Files (x86)/Razer Chroma SDK/bin
+/mnt/c/Program Files/Razer Chroma SDK/bin
+/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin
+/mnt/c/Program Files/Razer/ChromaBroadcast/bin
+/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path
+/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath
+/mnt/d/VMware/bin/
+/mnt/c/windows/system32
+/mnt/c/windows
+/mnt/c/windows/System32/Wbem
+/mnt/c/windows/System32/WindowsPowerShell/v1.0/
+/mnt/c/windows/System32/OpenSSH/
+/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common
+/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR
+/mnt/c/WINDOWS/system32
+/mnt/c/WINDOWS
+/mnt/c/WINDOWS/System32/Wbem
+/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/
+/mnt/c/WINDOWS/System32/OpenSSH/
+/mnt/c/Program Files/dotnet/
+/mnt/c/Program Files/MySQL/MySQL Server 8.0/bin/
+/mnt/c/compiler/make-4.4/make-4.4/WinRel
+/mnt/c/compiler/CMake/bin
+/mnt/c/compiler/NodeJs/
+/mnt/d/TortoiseGit/bin
+/mnt/d/DB/MySQL/MySQL Shell 8.0/bin/
+/mnt/c/Users/L/AppData/Local/Programs/Python/Launcher/
+/mnt/c/compiler/mingw/bin
+/mnt/c/Program Files/JetBrains/DataGrip 2023.1.2/bin
+/mnt/c/compiler/python3.12.0
+/mnt/c/compiler/python3.12.0/Scripts
+/mnt/c/compiler/python3.12.0/Lib/site-packages/django
+/mnt/c/Program Files/JetBrains/PyCharm 2023.2.4/bin
+/mnt/d/IntelliJ IDEA 2023.3.2/bin
+/mnt/c/Users/L/AppData/Local/GitHubDesktop/bin
+/mnt/c/Users/L/AppData/Roaming/npm
+/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps
+/mnt/d/DownLoad/Edge/gradle-8.4/bin
+/mnt/d/profile/Dev/Git/cmd
+/mnt/d/App/Bandizip/
+/mnt/d/App/pcsuite/
+/mnt/c/Users/L/AppData/Local/Programs/Python/Python39-32/Scripts/
+/mnt/c/Users/L/AppData/Local/Programs/Python/Python39-32/
+/mnt/c/Users/L/scoop/shims
+/mnt/d/IntelliJ IDEA 2023.3.2/bin
+/mnt/d/DownLoad/Edge/gradle-8.4/bin
+/mnt/d/profile/Dev/Cpp/w64devkit-1.22.0/w64devkit/bin
+/mnt/d/App/Microsoft VS Code/bin
+/snap/bin
+/home/lang/workspace/riscv-gnu-toolchain/bin
+/home/lang/workspace/riscv-gnu-toolchain/bin

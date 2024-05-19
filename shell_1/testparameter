@@ -1,0 +1,61 @@
+#!/bin/bash
+
+if [ -n $1 ]
+then 
+    echo "n"
+fi
+if [ -z $1 ]
+then 
+    echo "z"
+fi
+
+#参数个数
+echo $#
+
+params=$#
+
+echo the last param is $params
+echo it is ${!#}
+
+#抓取所有数据
+# $*和$@
+#现在的$*已经优化了，和$@基本没什么区别
+echo $*
+echo $@
+
+for pa in $*
+do
+    echo "p $pa"
+done 
+
+echo "@"
+
+for pa in $@
+do
+    echo $pa
+done 
+
+echo testshift
+#移动参数，shift n 
+
+until [ -z $1 ]
+do
+    echo $1
+    shift 2
+done 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

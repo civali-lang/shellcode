@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+for file in $1/*
+do
+    if [ -f $file ]
+    then 
+        echo f:$file
+    elif [ -d $file ]
+    then 
+        echo d:$file
+    fi 
+done

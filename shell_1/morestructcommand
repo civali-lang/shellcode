@@ -1,0 +1,203 @@
+#!/bin/bash
+
+#more structured commands
+
+#for
+for text in zhe shi yi tiao shen qi de tian lu
+do 
+   echo $text
+done 
+
+#保存旧值，以便恢复
+old=$IFS
+#设置字段分隔符
+IFS=$'\n'
+
+file=states
+
+for text in $(cat $file)
+do
+    echo the text is $text
+done
+
+IFS=:
+
+for text in $(cat /etc/passwd)
+do
+    echo $text
+done
+
+#恢复IFS
+IFS=$old
+
+# for text in $(cat $file)
+# do
+#     echo the text is $text
+# done
+
+
+#若你的IFS需要多个字符，将它们穿起来即可
+#IFS=$'\n':;"
+
+echo "file test"
+
+for file in ../../*
+do 
+    if [ -d "$file" ]
+    then 
+       echo $file is a dir
+    elif [ -f "$file" ]
+    then 
+       echo $file is a file
+    fi 
+done
+
+#C format for loop commands 
+
+for (( i=1; i <= 10; i++ ))
+do
+    echo this number is $i
+done
+
+
+for (( a=1, b=15; a<=15; a++, b-- ))
+do
+    echo $a - $b = $[ $a - $b ]
+done
+
+#C format while loop
+
+var=10
+while [ $var -gt 0 ]
+do
+    echo var=$var
+    var=$[ $var - 1]
+done
+
+IFS=:
+
+for path in $PATH
+do
+    echo $path
+done > path.txt
+
+#until命令
+
+var=100
+
+until [ $var -eq 0 ]
+do 
+    echo var=$var
+    var=$[ $var -25 ]
+done
+
+#嵌套循环
+
+for (( i=1; i<=9; i++ ))
+do
+    j=$i
+    while [ $j -le 9 ]
+    do
+        echo "$i X $j = $[ $i * $j ]"
+        j=$[ $j +1 ]
+    done
+    echo " "
+done
+
+old=$IFS
+IFS=$'\n'
+for entry in $( cat /etc/passwd )
+do 
+    echo "Values in $entry -"
+    IFS=:
+    for value in $entry
+    do
+        echo "  $value"
+    done 
+done 
+
+#break 和 continue
+
+i=20
+
+while [ $i -ge 0 ]
+do 
+    j=10
+    while [ $j -ge 0 ]
+    do 
+        
+        j=$[ $j - 1 ]
+        if [ $j -le 5 ] && [ $j -ge 2 ]
+        then 
+            continue
+        fi
+        echo i=$i,j=$j
+    done
+    i=$[ $i - 1 ]
+done
+
+#重定向循环的输出，只需在done后加 > output 即可
+
+i=20
+
+while [ $i -ge 0 ]
+do 
+    j=10
+    while [ $j -ge 0 ]
+    do 
+        
+        j=$[ $j - 1 ]
+        if [ $j -le 5 ] && [ $j -ge 2 ]
+        then 
+            continue
+        fi
+        echo i=$i,j=$j
+    done
+    i=$[ $i - 1 ]
+done > output
+
+var=100
+
+until [ $var -eq 0 ]
+do 
+    echo var=$var
+    var=$[ $var -25 ]
+done > output
+
+#查找可执行文件
+
+IFS=:
+for folder in $PATH
+do
+    echo "$folder:"
+    for file in $folder/*
+    do
+        if [ -x file ]
+        then
+            echo "  $file"
+        fi 
+    done > output
+done 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

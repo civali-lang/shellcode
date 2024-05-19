@@ -96,4 +96,27 @@ fi
 
 #双括号的使用
 
+if (( 2 ** 3 > 7 ))
+then 
+   echo "8>7"
+fi
+
+#使用双中括号比较字符串
+
+if [[ $USER == r* ]]
+then 
+   echo "hello $USER"
+else 
+   echo "sorry i do not know you"
+fi
+
+#case语句
+
+case $USER in
+lang) echo "hello $USER";;
+root) echo "Hello $USER";;
+*)    echo "none";;
+esac
+
+
 
